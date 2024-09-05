@@ -5,7 +5,7 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-image: url(C:\Users\Thiago\Desktop\trabalhos\sge\Dashboard-starter\src\imgs\fundo-verde.png); /* Replace with your image path */
+    background-image: url(../../imgs/fundo-verde.png); /* Replace with your image path */
     background-size: cover;
     background-position: center;
     font-family: 'Inter', sans-serif;
