@@ -34,8 +34,9 @@
   gap: 10px;
   overflow: hidden;
 
-  grid-template-columns: 11rem auto 35rem;
+  grid-template-columns: 11rem auto max-content;
 }
+
 
 @media screen and (max-width: 1200px) {
   .AppGlass{
@@ -49,3 +50,4 @@
     grid-template-columns: 1fr;
   } 
 }
+

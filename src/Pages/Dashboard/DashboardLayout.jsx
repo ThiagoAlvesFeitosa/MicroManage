@@ -1,6 +1,6 @@
-import Menu from "./components/Menu/Menu";
-import MainDash from "./components/MainDash/MainDash";
-import RightSide from "./components/RightSide/RightSide";
+import Menu from "../../components/Menu/Menu";
+import MainDash from "../../components/MainDash/MainDash";
+import RightSide from "../../components/RightSide/RightSide";
 
 
 

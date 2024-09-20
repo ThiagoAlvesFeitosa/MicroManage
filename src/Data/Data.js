@@ -1,4 +1,4 @@
-// Menu imports
+// src/Data/Data.js
 import {
     UilEstate,
     UilClipboardAlt,
@@ -7,30 +7,34 @@ import {
     UilChart,
     UilMoneyWithdrawal,
     UilUsdSquare,
-} from "@iconscout/react-unicons"
-
+} from "@iconscout/react-unicons";
 
 // Dados Menu
 export const DadosMenu = [
     {
         icon: UilEstate,
         heading: "Dashboard",
+        path: '/dashboard',  // Adicionando o caminho
     },
     {
         icon: UilClipboardAlt,
         heading: "Pedidos",
+        path: '/pedidos',  // Adicionando o caminho
     },
     {
         icon: UilUsersAlt,
         heading: "Clientes",
+        path: '/clientes',  // Adicionando o caminho
     },
     {
         icon: UilPackage,
         heading: "Estoque",
+        path: '/estoque',  // Adicionando o caminho
     },
     {
         icon: UilChart,
         heading: "Relatorios",
+        path: '/relatorios',  // Adicionando o caminho
     },
 ]
 
@@ -86,5 +90,3 @@ export const DadosCard = [
         ],
     },
 ]
-
-

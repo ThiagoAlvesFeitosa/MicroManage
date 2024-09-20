@@ -1,0 +1,67 @@
+.card-grid-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: space-between;
+    width: 220px;
+    border-radius: 8px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 16px;
+    height: 340px; /* Ajustado para ser mais compacto */
+    background-color: #ffffff;
+    transition: box-shadow 0.2s ease-in-out;
+}
+
+.card.expanded {
+    align-items: center;
+    height: 400px; /* Altura maior para edição */
+}
+
+.card.expanded>input {
+    justify-content: flex-start;
+    align-items: center;
+    height: 20px;
+    width: 200px; /* Altura maior para edição */
+}
+
+.card:hover {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 8px 20px;
+}
+
+.card img {
+    border-radius: 8px;
+    width: 100%;
+    height: 180px; /* Ajustado para ser mais proporcional */
+    object-fit: cover;
+}
+
+.card h2 {
+    font-size: 16px; /* Tamanho da fonte reduzido */
+    font-weight: 400; /* Removido o negrito */
+    color: #333;
+    margin-bottom: 4px;
+}
+
+.card p {
+    font-size: 14px; /* Tamanho de fonte reduzido para um visual mais leve */
+    color: #555;
+    margin: 2px 0;
+}
+
+.card p b {
+    color: #333;
+}

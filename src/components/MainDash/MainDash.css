@@ -3,3 +3,6 @@
     flex-direction: column;
     justify-content: space-evenly;
 }
+h1.title {
+    margin-top: -150px;
+}

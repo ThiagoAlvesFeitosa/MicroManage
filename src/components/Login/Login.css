@@ -1,16 +1,31 @@
-/* Login.css */
 
-.container {
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  .background-container {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-image: url(../../imgs/fundo-verde.png); /* Replace with your image path */
+    width: 100vw;
+    background-image: url(../../imgs/fundo-verde.png); 
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    z-index: 1; 
     font-family: 'Inter', sans-serif;
-}
-
+  }
   
   form {
     background: #fff;
@@ -35,22 +50,13 @@
   }
   
   input[type="text"],
+  input[type="email"],
   input[type="password"] {
     width: 90%;
-    padding: 10px ;
+    padding: 10px;
     border-radius: 5px;
     border: 1px solid #ccc;
     font-size: 1rem;
-    
-    
-  }
-  
-  .icon {
-    position: absolute;
-    top: 50%;
-    left: 10px;
-    transform: translateY(-50%);
-    color: #888;
   }
   
   .recall-forget {

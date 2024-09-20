@@ -1,137 +1,145 @@
 :root {
-    --green: linear-gradient(180deg, #34D399 -146.42%, #10B981 -46.42%);
-    --orange: #fca61f;
-    --black: #242d49;
-    --gray: #788097;
-    --purple: linear-gradient(180deg, #BB67FF 0%, #C484F3 100%);
-    --pink: #FF919D;
-    --glass: rgba(255, 255, 255, 0.54);
-    --boxShadow: 0px 19px 60px rgb(0 0 0 / 8%);
-    --smboxShadow: -79px 51px 60px rgba(0, 0, 0, 0.08);
-    --activeItem: #8ee7c7;
-    --gren2: #34D399;
-    --green3: #10B981;
+  --green: linear-gradient(180deg, #34D399 -146.42%, #10B981 -46.42%);
+  --orange: #fca61f;
+  --black: #242d49;
+  --gray: #788097;
+  --purple: linear-gradient(180deg, #BB67FF 0%, #C484F3 100%);
+  --pink: #FF919D;
+  --glass: rgba(255, 255, 255, 0.54);
+  --boxShadow: 0px 19px 60px rgb(0 0 0 / 8%);
+  --smboxShadow: -79px 51px 60px rgba(0, 0, 0, 0.08);
+  --activeItem: #8ee7c7;
+  --gren2: #34D399;
+  --green3: #10B981;
+}
+
+.Menu {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding-top: 4rem;
+  transition: all 300ms ease;
+}
+
+.logo {
+  display: flex;
+  height: 5rem;
+  font-weight: bold;
+  font-size: 22px;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  height: 4%;
+}
+
+.logo > img {
+  margin-bottom: 2rem;
+}
+
+.logo > span > span {
+  color: #AEEC67;
+}
+
+/* Menu */
+.menu {
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.menuItem {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  height: 2.5rem;
+  margin-left: 2rem;
+  position: relative;
+  transition: all 300ms ease;
+  font-size: 14px;
+  border-radius: 0.7rem;
+}
+
+.menu:hover {
+  cursor: pointer;
+}
+
+.active {
+  background: var(--activeItem);
+  margin-left: 0;
+}
+
+.active::before {
+  content: '';
+  width: 8px;
+  height: 100%;
+  background: var(--green3);
+  margin-right: calc(1rem - 8px);
+}
+
+.menu .menuItem:last-child {
+  position: absolute;
+  bottom: 3rem;
+  width: 100%;
+}
+
+/* Adiciona animação para o item do menu */
+.animating .menuItem {
+  animation: fadeIn 300ms ease;
+}
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: scale(0.95);
   }
-
-
-
-.Menu{
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    padding-top: 4rem;
-    transition: all 300ms ease;
-}
-
-.logo{
-    display: flex;
-    height: 5rem;
-    font-weight: bold;
-    font-size: 22px;
-    gap: 1rem;
-    align-items: center;
-    justify-content: center;
-    height: 4%;
-}
-
-.logo>img{
-    margin-bottom: 2rem;
-}
-
-.logo>span>span{
-    color: #AEEC67
-}
-
-/*menu*/
-
-.menu{
-    margin-top: 4rem;
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-}
-
-.menuItem{
-    
-    display: flex;
-    align-items: center;
-    gap: 1.5rem;
-    height: 2.5rem;
-    margin-left: 2rem;
-    position: relative;
-    transition: all 300ms ease;
-    font-size: 14px;
-    border-radius: 0.7rem;
-}
-
-.menu:hover{
-    cursor: pointer;
-    
-}
-
-.active{
-    background: var(--activeItem);
-    margin-left: 0;
-}
-
-.active::before{
-    content: '';
-    width: 8px;
-    height: 100%;
-    background: var(--green3);
-    margin-right: calc(1rem -8px);
-}
-
-
-.menu .menuItem:last-child{
-    position: absolute;
-    bottom: 3rem;
-    width: 100%;
-}
-  
-  
-  /* Tablets */
-  @media screen and (max-width: 1200px) {
-    .menuItem>span{
-      display: none;
-    }
-    .logo{
-      display: none;
-    }
+  to {
+      opacity: 1;
+      transform: scale(1);
   }
-  
-  @media screen and (max-width: 768px) {
-    .sidebar{
+}
+
+/* Tablets */
+@media screen and (max-width: 1200px) {
+  .menuItem > span {
+      display: none;
+  }
+  .logo {
+      display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .sidebar {
       position: fixed;
       z-index: 9;
       background: #ffe0e0;
       width: 55%;
       padding-right: 1rem;
       height: 100%;
-      
-    }
-    .menuItem>span{
+  }
+  .menuItem > span {
       display: block;
-    }
-    .logo{
+  }
+  .logo {
       display: flex;
-    }
-    .menu .menuItem:last-child {
+  }
+  .menu .menuItem:last-child {
       margin-bottom: -150px;
       position: relative;
       margin-top: 3rem;
-    }
-    .bars{
+  }
+  .bars {
       display: flex;
       position: fixed;
       top: 2rem;
-      left:60%;
-      background:#ffe0e0;
-      padding:10px;
+      left: 60%;
+      background: #ffe0e0;
+      padding: 10px;
       border-radius: 10px;
       z-index: 9;
-    }
-    .close{
-      left: -60%;
-    }
   }
+  .close {
+      left: -60%;
+  }
+}

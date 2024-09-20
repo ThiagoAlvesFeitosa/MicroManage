@@ -1,0 +1,87 @@
+.estoque-container {
+    display: flex;
+    font-family: 'Inter', sans-serif;
+}
+
+.menu {
+    flex: 1;
+}
+
+.card-container {
+    flex: 4;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Ajustado o espaço entre os cards */
+    padding: 10px;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 100vw;
+}
+
+
+
+
+  
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 20px; /* Espaço maior entre os cards */
+    justify-items: center;
+    margin-top: 20px;
+}
+
+.estoque-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px; /* Fundo claro para combinar com o tema */
+    padding: 10px 20px;
+    border-radius: 8px;
+}
+
+.estoque-header h1 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 600;
+    color: #333;
+}
+
+.button-group {
+    display: flex;
+    gap: 10px; /* Ajusta o espaço entre os botões */
+}
+
+.button-group .btn {
+    background-color: #f1f1f1;
+    color: #000;
+    border: none;
+    padding: 6px 12px; /* Reduzindo o padding para deixar o botão menor */
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px; /* Reduzindo o tamanho da fonte */
+}
+
+#novo{
+    background-color: #f1f1f1;
+    
+}
+
+#novo:hover{
+    background-color: #e0e0e0;
+    
+}
+
+#remover{
+    background-color: #eb353592;
+    
+}
+#remover:hover{
+    background-color: #f26f6f92;
+    
+}
+
