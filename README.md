@@ -1,70 +1,77 @@
-# Getting Started with Create React App
+Beleza! Aqui vai um **README simples e direto** para o **MicroManage (frontend)**, no mesmo estilo do backend que acabei de montar:
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+---
 
-## Available Scripts
+# MicroManage
 
-In the project directory, you can run:
+Aplicação web para gestão de tarefas e projetos, desenvolvida em **React**.
 
-### `yarn start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 🛠 Tecnologias
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+* React (JavaScript)
+* Node.js + npm/yarn (gerenciador de pacotes)
+* CSS para estilização
 
-### `yarn test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 🚀 Como rodar
 
-### `yarn build`
+1. Clonar o repositório:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+   ```bash
+   git clone https://github.com/ThiagoAlvesFeitosa/MicroManage.git
+   cd MicroManage
+   ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+2. Instalar dependências:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+   ```bash
+   npm install
+   # ou
+   yarn
+   ```
 
-### `yarn eject`
+3. Rodar o servidor de desenvolvimento:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+   ```bash
+   npm start
+   # ou
+   yarn start
+   ```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+4. Acessar em:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+   ```
+   http://localhost:3000
+   ```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+---
 
-## Learn More
+## 📂 Estrutura básica
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```
+MicroManage/
+├── public/          # arquivos estáticos
+├── src/             # código-fonte React
+│   ├── components/  # componentes reutilizáveis
+│   ├── pages/       # páginas principais
+│   ├── styles/      # arquivos de estilo
+│   └── App.js
+├── package.json
+└── README.md
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
 
-### Code Splitting
+## ✅ Possíveis melhorias
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+* Integração com o backend (API REST)
+* Autenticação de usuários
+* Dashboard com gráficos e relatórios
+* Melhorias de UI/UX
 
-### Analyzing the Bundle Size
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Quer que eu una os dois READMEs (frontend + backend) em um **README raiz**, tipo um guia único para o projeto *MicroManage (fullstack)*, ou prefere manter cada um separado no seu repositório?
