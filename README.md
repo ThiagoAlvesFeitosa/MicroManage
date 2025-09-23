@@ -1,4 +1,3 @@
-Beleza! Aqui vai um **README simples e direto** para o **MicroManage (frontend)**, no mesmo estilo do backend que acabei de montar:
 
 ---
 
@@ -73,5 +72,3 @@ MicroManage/
 * Melhorias de UI/UX
 
 ---
-
-Quer que eu una os dois READMEs (frontend + backend) em um **README raiz**, tipo um guia único para o projeto *MicroManage (fullstack)*, ou prefere manter cada um separado no seu repositório?
